@@ -26,3 +26,6 @@ https://www.mapbox.com/studio
 
 Mapbox APIdocs:
 https://www.mapbox.com/mapbox.js/api/v2.2.4/
+
+Ejemplos de uso en Mapbox
+https://www.mapbox.com/mapbox.js/example/v1.0.0/rotating-controlling-marker/
