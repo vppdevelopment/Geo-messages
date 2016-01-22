@@ -38,14 +38,15 @@ pre.ui-coordinates {
 <div id='map'></div>
 <pre id='coordinates' class='ui-coordinates'></pre>
 
-<script src="/mapbox.js/assets/data/realworld.388.js"></script>
+<script src="http://www.mapbox.com/mapbox.js/assets/data/realworld.388.js"></script>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoidnBwZGV2ZWxvcG1lbnQiLCJhIjoiY2lqb3ZxZndrMDB5anRva280NHNjcmhhOCJ9._KXGbPR4VZjyVE5yuTt5xg';
 var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([-37.82, 175.215], 14);;
+    .setView([4.67626, -74.10444], 14);;
 
 var markers = new L.MarkerClusterGroup();
 
+//adressPoints is the datasource for the map.
 for (var i = 0; i < addressPoints.length; i++) {
     var a = addressPoints[i];
     var title = a[2];
@@ -69,12 +70,17 @@ function onmove() {
         if (bounds.contains(marker.getLatLng())) {
             inBounds.push(marker.options.title);
         }
+        console.log(marker);
     });
     // Display a list of markers.
     document.getElementById('coordinates').innerHTML = inBounds.join('\n');
 }
 
 map.on('move', onmove);
+
+map.on('click', function(ev){
+      var c = ev.latlng;
+});
 
 // call onmove off the bat so that the list is populated.
 // otherwise, there will be no markers listed until the map is moved.
