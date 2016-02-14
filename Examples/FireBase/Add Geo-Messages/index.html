@@ -5,6 +5,8 @@
 <title>Add message geoTag</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='logic-addGeoTag.js' defer></script>
+<script src='Geo-Messages IO.js' defer></script>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 <style>
 div{
   padding-bottom: 10px;
@@ -21,21 +23,21 @@ input, button{
 
 <div>
 <label>Latitude:</label>
-<input id="latitude"></input>
+<input id="latitude" value="4.68799">
 </div>
 
 <div>
 <label>Longitude:</label>
-<input id="longitude"></input>
+<input id="longitude" value="-74.09618">
 </div>
 
 <div>
 <label>Message:</label>
-<input id="message"></input>
+<input id="message">
 </div>
 
 <div>
-<button>Save</button>
+<button onclick="addGeoTag()" >Save</button>
 </div>
 
 </body>
