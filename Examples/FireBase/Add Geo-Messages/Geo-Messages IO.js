@@ -1,4 +1,4 @@
-var messagesIO = new Firebase("https://blazing-torch-1750.firebaseio.com/geo-messages");
+var messagesIO = new Firebase("https://amber-heat-279.firebaseio.com/geo-messages");
 
 function addMessage(tag, content)
 {
