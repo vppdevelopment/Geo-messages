@@ -27,7 +27,11 @@ choco install tortoisegit
 Luego de instalado podremos bajar y configurar un repositorio
 <https://github.com/vppdevelopment/Geo-messages>
 
-
+![alt tag](https://raw.githubusercontent.com/vppdevelopment/Geo-messages/master/Documentation/images/git%20repositorio.gif)
+* Configuramos el usuario de github
+![alt tag](https://raw.githubusercontent.com/vppdevelopment/Geo-messages/master/Documentation/images/configurando userpass.gif)
+* Al subir codigo nos pedira la contraseña la primera vez unicamente
+![alt tag](https://raw.githubusercontent.com/vppdevelopment/Geo-messages/master/Documentation/images/Subiendo%20codigo.gif)
 
 --------------
 
