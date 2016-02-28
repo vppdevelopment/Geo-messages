@@ -8,9 +8,12 @@
 <https://chocolatey.org/>  
 Este nos ayudara a instalar mas facilmente otros programas
 
-![alt tag](file:///C:\Users\Eduardo\Documents\Chocolatey install.gif)
+![alt tag](https://raw.githubusercontent.com/vppdevelopment/Geo-messages/master/Documentation/images/Chocolatey%20install.gif)
 
 Luego de instalado se debe cerrar y abrir nuevamente la ventana de CMD para poder empezar a utilizarlo.
+
+
+![alt tag](https://raw.githubusercontent.com/vppdevelopment/Geo-messages/master/Documentation/images/python%20install.gif)
 
 --------------
 
@@ -37,5 +40,3 @@ Luego de instalado podremos bajar y configurar un repositorio
 ### Instalando Python ###
 
 `choco install python2`
-
-![alt tag](file:///C:\Users\Eduardo\Documents\python install.gif)
