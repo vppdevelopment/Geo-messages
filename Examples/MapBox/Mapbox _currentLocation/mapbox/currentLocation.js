@@ -11,6 +11,7 @@ if (!navigator.geolocation)
     map.locate();
 }
 
+var messages   = getMessages();
 
 var markers = new L.MarkerClusterGroup();
 
@@ -58,7 +59,7 @@ map.on('locationfound', function(e) {
 // If the user chooses not to allow their location
 // to be shared, display an error message.
 map.on('locationerror', function() {
-    alert('Position could not be found');
+    
 });
 
 
