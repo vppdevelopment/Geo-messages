@@ -9,16 +9,40 @@
 <script src='DA/Geo-MessagesIO.js' defer></script>
 <script src='mapbox/nearbyMessages.js' defer></script>
 <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='time\timeDecoder.js' defer></script>
 
 <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
 <style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
+   body { margin:0; padding:0; }
+   section { position:absolute; top:0; bottom:0; width:100%; right:17%; }
+    aside {
+    width:15%;
+    float:right;
+    padding:10px;
+    border: 8px groove #73AD21;
+   position: relative;
+    }
+
+    #chatBox {
+    font-family:tahoma;
+    font-size:12px;
+    color:black;
+    border: 1px teal solid;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    float:left;
+    }
+
 </style>
 </head>
 <body onload="init()" >
 
-<div id='map'></div>
+<section id='map'></section>
+
+<aside>
+  <div id="chatBox"></div>
+</aside>
 
 </body>
 </html>
