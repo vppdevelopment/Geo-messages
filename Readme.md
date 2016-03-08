@@ -22,12 +22,17 @@ http://developer.factual.com/working-with-categories/
 
 Instalacion de firebase
 1. Instalar node.js en la maquina
+
 2. Verificar las variables de entorno e incluir la carpeta bin de la instalacion de node.js en PATH
+
 	* Para verificar la ruta de la instalacion de node.js ejecutar el comando npm get prefix
 3. Ejecutar el comando npm install -g firebase-tools
+
 	* Si falla por permisos en la carpeta de node_modules de la instalacion de node.js asegurarse que esta tenga todos los permisos 
 		Mac y Linux: chmod 777 <ruta de instalacion de node.js>
 
 	Mas informacion https://github.com/npm/npm/issues/5869
+
 4. Para verificar que la instalacion fue realizada con exito, ejecutar el comando 'firebase' en la consola
+
 5. Para crear una aplicacion de firebase ejecutar 'firebase init' y adicionar las credenciales de acceso de firebase.
