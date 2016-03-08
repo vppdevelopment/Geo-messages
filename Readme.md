@@ -20,7 +20,8 @@ http://developer.factual.com/search-place-rank-and-boost/index.html
 Categorias de lugares en Factual.
 http://developer.factual.com/working-with-categories/
 
-Instalacion de firebase
+## Instalacion de firebase
+
 1. Instalar node.js en la maquina
 
 2. Verificar las variables de entorno e incluir la carpeta bin de la instalacion de node.js en PATH
