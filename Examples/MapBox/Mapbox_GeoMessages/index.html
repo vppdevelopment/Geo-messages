@@ -27,8 +27,9 @@
         html, body {
         width:100%;
         }
-        #map { position: fixed; top:6em; bottom:1em; left:30%; right:10%; width:70%; }
-        #chatBox { position: relative; top:0.5em; bottom:1em; width:30%; }
+        #map { position: fixed; top:6em; bottom:1em; left:21%; right:10%; width:80%; }
+        #chatBox { position: relative; top:0.5em; bottom:1em; left:0.5%; width:20%; }
+        .cardInfo{ font-size: 80%; }
     </style>
 
 </head>
@@ -39,7 +40,7 @@
 
 <div class="navbar-fixed">
 <nav>
-    <div class="nav-wrapper blue">
+    <div class="nav-wrapper red accent-4">
         <a href="#" class="brand-logo">VPP</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#">Business</a></li>
@@ -50,11 +51,9 @@
 </div>
 
 <div>
-    <div id='chatBox'/>
+    <div id='chatBox' class="grey lighten-4" />
     <div id='map'/>
 </div>
-
-
 
 </body>
 </html>

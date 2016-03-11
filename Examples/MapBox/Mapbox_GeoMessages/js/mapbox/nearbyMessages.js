@@ -31,20 +31,25 @@ function AddPointToMap(snapshot, markers)
 function AddMessageToChatBox(snapshot)
 {
     var card = document.createElement("div");
-    card.className = "card blue-grey darken-1";
+    card.className = "card white1 z-depth-1";
 
     var cardContent = document.createElement('div');
-    cardContent.className = "card-content white-text";
+    cardContent.className = "card-content";
 
     var cardTitle = document.createElement('span');
-    cardTitle.className = "card-title";
-    cardTitle.innerHTML = time(snapshot.val().date)+ " - "+ "anonymus";
+    cardTitle.className = "cardInfo";
+    cardTitle.innerHTML = "anonymus";
+
+    var cardDate = document.createElement('span');
+    cardDate.className = "cardInfo";
+    cardDate.innerHTML = time(snapshot.val().date);
 
     var p = document.createElement('p');
     p.innerHTML = snapshot.val().message;
 
     cardContent.appendChild(cardTitle);
     cardContent.appendChild(p);
+    cardContent.appendChild(cardDate);
     card.appendChild(cardContent);
 
     chatBox.appendChild(card);
