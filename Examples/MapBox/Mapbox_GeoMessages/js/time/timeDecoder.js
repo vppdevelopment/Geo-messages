@@ -2,7 +2,7 @@ function time(timestamp) {
     var date = new Date(timestamp);
     var format = [date.getHours(), date.getMinutes(), date.getSeconds()];
     numberFormat(format);
-    return format.join(":");
+    return date.getDay()+"/"+date.getMonth()+ "/"+date.getFullYear() +" - "+ format.join(":");
 }
 
 function numberFormat(format)

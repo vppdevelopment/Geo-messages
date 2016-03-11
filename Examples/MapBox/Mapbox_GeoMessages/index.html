@@ -6,43 +6,51 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
-<script src='DA/Geo-MessagesIO.js' defer></script>
-<script src='mapbox/nearbyMessages.js' defer></script>
 <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-<script src='time\timeDecoder.js' defer></script>
+
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<script src='js/DA/Geo-MessagesIO.js' defer></script>
+<script src='js/mapbox/nearbyMessages.js' defer></script>
+<script src='js/time/timeDecoder.js' defer></script>
 
 <link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-<style>
-   body { margin:0; padding:0; }
-   section { position:absolute; top:0; bottom:0; width:100%; right:17%; }
-    aside {
-    width:15%;
-    float:right;
-    padding:10px;
-    border: 8px groove #73AD21;
-   position: relative;
-    }
 
-    #chatBox {
-    font-family:tahoma;
-    font-size:12px;
-    color:black;
-    border: 1px teal solid;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    float:left;
-    }
+    <style>
+        html, body {
+        width:100%;
+        }
+        #map { position: fixed; top:6em; bottom:1em; left:30%; right:10%; width:70%; }
+        #chatBox { position: relative; top:0.5em; bottom:1em; width:30%; }
+    </style>
 
-</style>
 </head>
 <body onload="init()" >
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 
-<section id='map'></section>
+<nav>
+    <div class="nav-wrapper blue">
+        <a href="#" class="brand-logo">VPP</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</nav>
 
-<aside>
-  <div id="chatBox"></div>
-</aside>
+<div>
+    <div id='chatBox'/>
+    <div id='map'/>
+</div>
+
+
 
 </body>
 </html>
