@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
- 
-    <title>AngularJS & Firebase Web App</title>
- 
+
+    <title>Vox Poppuli POC</title>
+
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
 
     <link href="https://getbootstrap.com/examples/blog/blog.css" rel="stylesheet">
- 
+
 </head>
- 
+
 <body ng-controller="WelcomeCtrl">
     <div class="blog-masthead">
         <div class="container">
@@ -25,7 +25,7 @@
     </div>
     <div class="container">
         <div class="page-header">
-            <h1>AngularJS & Firebase App</h1>
+            <h1>VPP POC</h1>
         </div>
         <p class="lead">Welcome home <b>{{username}}</b> !!</p>
     </div>
@@ -34,7 +34,7 @@
             <h4 class="list-group-item-heading">{{article.title}}</h4>
             <p class="list-group-item-text">{{article.post}}</p>
             <span class="pull-right">
-                <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#editModal">EDIT</button>        
+                <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#editModal">EDIT</button>
                 <button class="btn btn-xs btn-warning">DELETE</button>
             </span>
         </a>
@@ -73,4 +73,3 @@
     </div>
 </body>
 </html>
-
