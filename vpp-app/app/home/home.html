@@ -11,10 +11,12 @@
     <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
 
     <link href="https://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/ladda-themeless.min.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-2.0.1.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/ladda.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/spin.min.js"></script>
 </head>
     <body ng-controller="HomeCtrl">
 
@@ -36,7 +38,9 @@
                 <label class="checkbox">
                     <a href="#/register"> Sign Up</a>
                 </label>
-                <button ng-disabled="!user.email || !user.password" type="button" ng-click="SignIn($event)" class="btn btn-lg btn-primary btn-block">SignIn</button>
+                  <button ladda-loading="login.loading" data-style="expand-right" ng-disabled="!user.email || !user.password" type="button" ng-click="SignIn($event)" class="btn btn-lg segoe-ui-light ladda-button btn-primary btn-block">
+                    <span class="ladda-label">Sign In</span>
+                  </button>
             </form>
         </div>
     </body>
