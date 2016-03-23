@@ -20,6 +20,12 @@ http://developer.factual.com/search-place-rank-and-boost/index.html
 Categorias de lugares en Factual.
 http://developer.factual.com/working-with-categories/
 
+## Instalacion de bower
+
+1. Tener previamente instalado *node* y *npm*
+2. `npm install -g bower`
+3. `bower install` (En la carpeta donde se encuentre el bower.json)
+
 ## Instalacion de firebase
 
 1. Instalar node.js en la maquina
